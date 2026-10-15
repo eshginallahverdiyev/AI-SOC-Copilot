@@ -1,0 +1,13 @@
+Subject: Your weekly engineering newsletter
+From: Newsletter <news@example.org>
+
+Hi,
+
+This week's reading list:
+
+- Release notes: https://www.example.com/blog/release-notes
+- Upcoming meetup: https://www.example.org/events
+
+You receive this because you subscribed. Unsubscribe any time.
+
+The Newsletter Team

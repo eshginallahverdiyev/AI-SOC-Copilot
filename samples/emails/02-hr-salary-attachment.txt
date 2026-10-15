@@ -1,0 +1,13 @@
+Subject: Updated salary table 2026 - please review
+From: HR Department <hr@example.com>
+
+Hello,
+
+Please find the updated salary table attached. Open it with macros enabled to
+see the full details and confirm by the end of the day.
+
+(Attach any harmless test file, for example the EICAR test file, to exercise
+the attachment branch. Never use real malware.)
+
+Regards,
+HR
