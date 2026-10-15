@@ -1,0 +1,21 @@
+{
+  "all_fields": {
+    "id": "1791885312.510778",
+    "timestamp": "2026-10-12T13:45:00.000+0400",
+    "rule": {
+      "id": "100100",
+      "level": 15,
+      "description": "Ransomware behavior detected: mass file encryption and outbound C2 connection",
+      "groups": ["local", "ransomware"],
+      "mitre": {
+        "id": ["T1486", "T1071.001"],
+        "technique": ["Data Encrypted for Impact", "Application Layer Protocol"],
+        "tactic": ["Impact", "Command and Control"]
+      }
+    },
+    "agent": { "id": "000", "name": "wazuh-server", "ip": "192.168.177.130" },
+    "manager": { "name": "wazuh-server" },
+    "data": { "dstip": "45.147.231.17", "dstport": "443" },
+    "full_log": "Outbound connection established to 45.147.231.17:443 (known TOR exit node / malicious infrastructure). Multiple file rename operations detected in /home/wazuh-user/Documents."
+  }
+}

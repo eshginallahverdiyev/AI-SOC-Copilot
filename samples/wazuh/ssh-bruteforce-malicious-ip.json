@@ -1,0 +1,21 @@
+{
+  "all_fields": {
+    "id": "1791885112.310022",
+    "timestamp": "2026-10-13T09:40:00.000+0000",
+    "rule": {
+      "id": "100100",
+      "level": 12,
+      "description": "Multiple authentication failures followed by inbound connection from known malicious IP",
+      "groups": ["local", "sshd", "authentication_failures"],
+      "mitre": {
+        "id": ["T1078", "T1110"],
+        "technique": ["Valid Accounts", "Brute Force"],
+        "tactic": ["Defense Evasion", "Credential Access"]
+      }
+    },
+    "agent": { "id": "004", "name": "DESKTOP-TEST", "ip": "192.168.56.30" },
+    "manager": { "name": "wazuh-server" },
+    "data": { "srcip": "162.243.103.246", "srcport": "51422", "dstuser": "root" },
+    "full_log": "sshd: Accepted password for root from 162.243.103.246 port 51422 ssh2"
+  }
+}

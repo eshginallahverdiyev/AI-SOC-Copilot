@@ -1,0 +1,21 @@
+{
+  "all_fields": {
+    "id": "1791885412.610115",
+    "timestamp": "2026-10-13T10:05:41.120+0000",
+    "rule": {
+      "id": "100110",
+      "level": 10,
+      "description": "Executable downloaded from an external URL",
+      "groups": ["local", "web", "download"],
+      "mitre": {
+        "id": ["T1105"],
+        "technique": ["Ingress Tool Transfer"],
+        "tactic": ["Command and Control"]
+      }
+    },
+    "agent": { "id": "001", "name": "ubuntu-endpoint", "ip": "192.168.56.20" },
+    "manager": { "name": "wazuh-server" },
+    "data": { "url": "https://secure.eicar.org/eicar.com" },
+    "full_log": "proxy: GET https://secure.eicar.org/eicar.com 200 68 text/plain (EICAR test download)"
+  }
+}

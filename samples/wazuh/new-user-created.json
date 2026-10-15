@@ -1,0 +1,20 @@
+{
+  "all_fields": {
+    "id": "1791885212.410331",
+    "timestamp": "2026-10-13T09:35:20.390+0000",
+    "rule": {
+      "id": "5902",
+      "level": 8,
+      "description": "New user added to the system.",
+      "groups": ["syslog", "adduser", "account_changed"],
+      "mitre": {
+        "id": ["T1136"],
+        "technique": ["Create Account"],
+        "tactic": ["Persistence"]
+      }
+    },
+    "agent": { "id": "000", "name": "wazuh-server" },
+    "manager": { "name": "wazuh-server" },
+    "full_log": "Oct 13 09:35:20 wazuh-server useradd[22425]: new user: name=hacker, UID=1004, GID=1004, home=/home/hacker, shell=/bin/bash, from=/dev/pts/1"
+  }
+}
