@@ -1,0 +1,19 @@
+{
+  "name": "ai-soc-copilot",
+  "version": "1.0.0",
+  "description": "AI-assisted SOC triage for Wazuh alerts and suspicious emails, built with n8n, threat-intelligence APIs and Gemini.",
+  "private": true,
+  "license": "MIT",
+  "author": "Eshgin Allahverdiyev",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node tests/run-all.js",
+    "validate": "node scripts/validate-workflows.js",
+    "scan": "node scripts/scan-secrets.js",
+    "prompts": "node scripts/generate-prompts.js",
+    "prompts:check": "node scripts/generate-prompts.js --check",
+    "check": "npm run validate && npm run scan && npm run prompts:check && npm test"
+  }
+}
