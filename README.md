@@ -2,7 +2,7 @@
 
 **AI-assisted security triage for Wazuh alerts and suspicious e-mails, built with n8n, threat-intelligence APIs and Gemini.**
 
-[![CI](https://github.com/eshginallahverdiyev/ai-soc-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/ai-soc-copilot/actions/workflows/ci.yml)
+[![CI](https://github.com/eshginallahverdiyev/AI-SOC-Copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/eshginallahverdiyev/AI-SOC-Copilot/actions/workflows/ci.yml)
 ![n8n](https://img.shields.io/badge/n8n-2.x-ea4b71)
 ![Wazuh](https://img.shields.io/badge/Wazuh-4.4%2B-005571)
 ![License](https://img.shields.io/badge/license-MIT-green)
