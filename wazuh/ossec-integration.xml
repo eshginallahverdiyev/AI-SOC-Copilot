@@ -1,0 +1,26 @@
+<!--
+  Add this block inside <ossec_config> in /var/ossec/etc/ossec.conf on the Wazuh
+  manager, then restart it:  sudo systemctl restart wazuh-manager
+
+  Wazuh's built-in "shuffle" integration (Wazuh 4.4.0 or newer) POSTs the alert
+  as JSON, with the complete alert under "all_fields", to any webhook URL. n8n's
+  webhook accepts it as is.
+
+  Replace <N8N_HOST> with an address of the machine running n8n that the Wazuh
+  VM can reach. Use the PRODUCTION URL (/webhook/...), which requires the
+  workflow to be published/active. The /webhook-test/... URL only works while
+  the editor is waiting for a test event.
+-->
+<integration>
+  <name>shuffle</name>
+  <hook_url>http://<N8N_HOST>:5678/webhook/wazuh-alert</hook_url>
+  <level>7</level>
+  <alert_format>json</alert_format>
+</integration>
+
+<!--
+  Optional filters (use one or combine, see the Wazuh documentation):
+    <rule_id>100100,100110</rule_id>
+    <group>authentication_failed,syscheck</group>
+  Raise <level> to reduce volume; lower it to triage more alerts.
+-->
