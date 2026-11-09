@@ -7,7 +7,7 @@
 ![Wazuh](https://img.shields.io/badge/Wazuh-4.4%2B-005571)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-AI SOC Copilot turns two noisy, repetitive SOC chores into a single automated workflow that runs on a laptop with **8 GB of RAM**:
+AI SOC Copilot turns two noisy, repetitive SOC chores into a single automated workflow:
 
 1. **Phishing & Attachment Analysis** - every incoming e-mail is mined for URLs and attachments, the indicators are checked against URLScan, VirusTotal and MalwareBazaar, Gemini writes the verdict, and an HTML report lands in your inbox.
 2. **Wazuh Alert Triage** - Wazuh forwards alerts to an n8n webhook, the IPs, URLs and file hashes inside are enriched with VirusTotal, AbuseIPDB and MalwareBazaar, Gemini classifies the alert (True / False Positive, severity, MITRE context, recommended actions) and deterministic guard rails make sure the AI can never under-rate a clearly malicious indicator.
